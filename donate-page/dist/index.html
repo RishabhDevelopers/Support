@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Supp</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  
+ <div id="myModal" class="modal">
+  <div class="modal-content"> <br>
+    <label for="inputValue"><h3>Please Enter your <span>YouTube</span> handle</h3></label> <br>
+    <input type="text" id="inputValue" placeholder="www.youtube.com/@handle"> <br>
+    <button id="btnOK">Submit</button> <br>
+  </div>
+</div>
+<!-- partial:index.partial.html -->
+
+<div class="donate">
+  <div class="donate-black">
+    <h2><span>&#8377;</span> Support</h3>
+    <p>Your contribution is vital to the success of our initiative. </p>
+  </div>
+  <div class="donate-blue">
+    <h3>Amount*</h3>
+    <div class="donate-amount-box">
+      <div class="donate-amount">
+        <div class="denomination selected">
+          <input autocomplete="off" type="radio" name="amount" id="amount10" value="10" checked="">
+          <label for="amount10">&#8377;10</label>
+        </div>
+        <div class="denomination">
+          <input autocomplete="off" type="radio" name="amount" id="amount20" value="20">
+          <label for="amount20">&#8377;20</label>
+        </div>
+        <div class="denomination">
+          <input autocomplete="off" type="radio" name="amount" id="amount50" value="50">
+          <label for="amount50">&#8377;50</label>
+        </div>
+        <div class="denomination">
+          <input autocomplete="off" type="radio" name="amount" id="amount100" value="100">
+          <label for="amount25">&#8377;100</label>
+        </div>
+        <div class="denomination">
+          <input autocomplete="off" type="radio" name="amount" id="amount500" value="500">
+          <label for="amount500">&#8377;500</label>
+        </div>
+        <div class="denomination">
+          <input autocomplete="off" type="radio" name="amount" id="amount1000" value="1000">
+          <label for="amount1000">&#8377;1000</label>
+        </div>
+      </div>
+      <div class="denomination-other">
+          <input autocomplete="off" type="text" name="amount" value="" placeholder="Enter Other Amount">
+        </div>
+    </div>
+  </div>
+  
+  <div class="donate-blue donate-payment">
+    <h3>Payment Method*</h3>
+    <div>
+      <label>
+        <input id = "paytm" type="radio" name="payment" value="paytm" checked="checked" autocomplete="off">Paytm
+      </label>
+      <label>
+        <input id = "phonepe" type="radio" name="payment" value="phonepe" autocomplete="off">Phone Pe
+      </label>
+      <label>
+        <input id = "gpay" type="radio" name="payment" value="gpay" autocomplete="off">GPay
+      </label>
+    </div>
+    <div class="donate-submit">
+      <button onclick = "submitPay()" type="submit" autocomplete="off">Support &#8377;10</button>
+      <p><small>A supporter is worth a thousand follower.</small></p>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
